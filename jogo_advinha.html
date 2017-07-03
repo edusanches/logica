@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+
+<script>
+
+//	Funções do código aqui
+
+	function pulaLinha() {
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+//	Váriaveis do código aqui
+
+	var numeroPensado = Math.round(Math.random() * 100);
+	console.log(numeroPensado);
+
+	var chute = parseInt(prompt("Digite seu chute!"))
+
+//	Área visível do código
+
+	if(chute == numeroPensado) {
+		mostra("Você acertou!")
+	} else {
+		mostra("Você errou, o número pensado foi " + numeroPensado)
+	}
+
+</script>
