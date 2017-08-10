@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+<script>
+  function mostra(frase) {
+    document.write(frase + "<br>");
+  }
+
+  var totalDeEventos = parseInt(prompt("Informe o total de eventos"));
+  var totalGastoComEventos = 0;
+
+  for (var contador = 1; contador <= totalDeEventos; contador++) {
+    var gasto = parseInt(prompt("Informe o gasto com o evento " + contador));
+    var totalGastoComEventos = totalGastoComEventos + gasto;
+  }
+
+  var media = totalGastoComEventos / totalDeEventos;
+
+  mostra("A média de gastos é " + media);
+</script>
